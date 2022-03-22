@@ -7,3 +7,4 @@ services:
     command: ["python3", "main.py"]
     volumes:
       - './main.py:/app/main.py'
+      - './input:/app/input'

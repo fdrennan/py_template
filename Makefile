@@ -6,3 +6,6 @@ restore:
 
 run:
 	docker-compose up
+
+test:
+	nosetests tests
