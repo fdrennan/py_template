@@ -3,3 +3,6 @@ snapshot:
 
 restore:
 	pip install -r requirements.txt
+
+run:
+	docker-compose up
