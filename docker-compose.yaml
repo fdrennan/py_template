@@ -1,0 +1,9 @@
+# https://www.domysee.com/blogposts/reverse-proxy-nginx-docker-compose
+version: '3.4'
+services:
+  app:
+    container_name: py_template
+    build: .
+    command: ["python3", "main.py"]
+    volumes:
+      - './main.py:/app/main.py'
