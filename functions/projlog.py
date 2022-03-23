@@ -2,7 +2,7 @@ import logging
 import datetime
 
 
-def mylog(logdir: str):
+def log(logdir: str):
     # Create custom logger logging all five levels
     logger = logging.getLogger(logdir)
 

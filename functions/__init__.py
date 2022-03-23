@@ -1,2 +1,2 @@
 from .files import import_from_dir
-from .projlog import mylog
+from .projlog import log

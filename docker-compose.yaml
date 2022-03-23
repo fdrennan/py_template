@@ -4,8 +4,9 @@ services:
   app:
     container_name: py_template
     build: .
-    command: ["python3", "main.py"]
+    command: ["make", "start"]
     volumes:
+      - './Makefile:/app/Makefile'
       - './main.py:/app/main.py'
       - './input:/app/input'
       - './functions:/app/functions'

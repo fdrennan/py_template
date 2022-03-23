@@ -1,4 +1,7 @@
-build: snapshot install
+build: snapshot install db
+
+db:
+	docker-compose build
 
 snapshot:
 	pip-compile
@@ -6,10 +9,12 @@ snapshot:
 install:
 	pip install -r requirements.txt
 
-runlocal:
-	python3 main.py -v DEBUG input
+start:
+	python3 main.py -v DEBUG input output
 
-run:
+run: build up
+
+up:
 	docker-compose up
 
 test:
