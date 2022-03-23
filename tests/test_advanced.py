@@ -1,4 +1,4 @@
-from .context import sample
+from .context import functions
 
 import unittest
 
@@ -7,7 +7,7 @@ class AdvancedTestSuite(unittest.TestCase):
     """Advanced test cases."""
 
     def test_thoughts(self):
-        self.assertIsNone(sample.hmm())
+        self.assertIsNone(functions.hmm())
 
 
 if __name__ == "__main__":

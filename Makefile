@@ -1,10 +1,13 @@
+build: snapshot install
+
 snapshot:
 	pip-compile
 
 install:
 	pip install -r requirements.txt
 
-rebuild: snapshot install
+runlocal:
+	python3 main.py -v DEBUG input
 
 run:
 	docker-compose up
