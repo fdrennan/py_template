@@ -2,7 +2,7 @@ Olive Proj
 
 This project uses Docker Compose and make.
 
-This project requires [pip-tools](https://github.com/jazzband/pip-tools)
+This project requires ![pip-tools](https://github.com/jazzband/pip-tools)
 
 .. code-block:: bash
 
