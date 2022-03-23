@@ -1,20 +1,19 @@
 from setuptools import setup, find_packages
 
-with open('README.rst') as f:
+with open("README.rst") as f:
     readme = f.read()
 
-with open('LICENSE') as f:
+with open("LICENSE") as f:
     license = f.read()
 
 setup(
-    name='pytemplate',
-    version='0.1.0',
-    description='Sample package for Python',
+    name="pytemplate",
+    version="0.1.0",
+    description="Sample package for Python",
     long_description=readme,
-    author='Freddy Drennan',
-    author_email='drennanfreddy@gmail.com',
-    url='https://ndexr.com',
+    author="Freddy Drennan",
+    author_email="drennanfreddy@gmail.com",
+    url="https://ndexr.com",
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=("tests", "docs")),
 )
-
