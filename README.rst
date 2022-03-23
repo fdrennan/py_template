@@ -2,7 +2,7 @@ Olive Proj
 
 This project uses Docker Compose and make.
 
-This project requires ![pip-tools](https://github.com/jazzband/pip-tools)
+This project requires `pip-tools <https://github.com/jazzband/pip-tools>`_
 
 .. code-block:: bash
 
@@ -12,13 +12,16 @@ This project requires ![pip-tools](https://github.com/jazzband/pip-tools)
 If make and Docker Compose are available
 
 .. code-block:: bash
+
     make run
 
-If you're feeling adventurous, do it from scratch
+Run it from scratch
 
-.. code-block::bash
+.. code-block:: bash
+
     pip-compile
     pip install -r requirements.txt
     python3 main.py -v DEBUG input output
+
 
 
