@@ -9,4 +9,6 @@ services:
       - './Makefile:/app/Makefile'
       - './main.py:/app/main.py'
       - './input:/app/input'
+      - './output:/app/output'
+      - './logs:/app/logs'
       - './functions:/app/functions'
